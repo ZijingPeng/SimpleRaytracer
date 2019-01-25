@@ -3,9 +3,9 @@ A ray tracing renderer which can provide a multi-threaded rendering of objects o
 
 ### Demo
 
-![demo](D:\Repository\SimpleRaytracer\demo.gif)
+![demo](demo.gif)
 
-![scene](D:\Repository\SimpleRaytracer\scene.png)
+![scene](scene.png)
 
 ### Getting Start
 
