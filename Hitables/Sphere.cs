@@ -24,12 +24,12 @@ namespace Raytracer.Hitables
             var c = oc.Dot(oc) - Radius * Radius;
             var delta = b * b - a * c;
             
-            // 若光线与球没有两个交点
+            // if does not hit 
             if (delta <= 0)
             {
                 return false;
             }
-            // 有交点
+            // if hits
             var temp = (float)(-b - Math.Sqrt(b * b - a * c)) / a;
             if (temp < max && temp > min)
             {

@@ -32,7 +32,7 @@ namespace Raytracer.Textures
         {
             var i = (int)(u * Width);
             var j = (int)((1 - v) * Height - 0.001f);
-            // clampŒ∆¿Ì—∞÷∑
+            // clamp
             if (i < 0)
             {
                 i = 0;

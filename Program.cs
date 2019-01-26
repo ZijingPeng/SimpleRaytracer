@@ -108,12 +108,12 @@ namespace Raytracer
         {
             if (state < 100)
             {
-                // 平移
+                // translate
                 Camera.Lookfrom += step;
             }
             else
             {
-                // 旋转
+                // rotate
                 var t = (float)Math.PI / 180 * (state - 100);
                 var x = (float)Math.Cos(t) * radius + 0.1f;
                 var z = (float)Math.Sin(t) * radius + 1;
@@ -124,7 +124,7 @@ namespace Raytracer
             {
                 Application.Exit();
             }
-            // rotation
+            // rotate
             if (state != 0 && state % 20 == 0)
             {
                 World.Models[World.Models.Count - 1] = Model.FromObjFile(

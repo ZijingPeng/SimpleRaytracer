@@ -52,7 +52,7 @@ namespace Raytracer.Hitables
 
             if (Math.Abs(s1 + s2 + s3 - total) <= 0.01f && t < max && t > min)
             {
-                // p点在三角形内
+                // if p is in triangle
                 record.Distance = t;
                 record.P = d;
                 record.Normal = newNormal;
